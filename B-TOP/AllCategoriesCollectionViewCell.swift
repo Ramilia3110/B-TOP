@@ -11,9 +11,7 @@ import Kingfisher
 
 class AllCategoriesCollectionViewCell: UICollectionViewCell {
     @IBOutlet  weak var imageCategories: UIImageView!
-    @IBAction func clickSubcategory(){
-        
-    }
+    @IBOutlet weak var titleCategory: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +20,7 @@ class AllCategoriesCollectionViewCell: UICollectionViewCell {
     
     
     func setData(category:Category){
+        titleCategory.text = category.title
         let url = URL(string: category.category_image_url)
         imageCategories.kf.setImage(with: url)
         
