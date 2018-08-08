@@ -29,6 +29,24 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
+    func getLanguages (completion: @escaping ([Language]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.languages, completion: { (data) in
+            //TODO
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode([Language].self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
+    
+    
     
 }
 

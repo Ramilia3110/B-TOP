@@ -20,6 +20,9 @@
 		8417D8BD2119E3F500C281C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417D8BC2119E3F500C281C6 /* Extensions.swift */; };
 		8417D8BF2119E57900C281C6 /* AllCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417D8BE2119E57900C281C6 /* AllCategories.swift */; };
 		8417D8C32119E7EE00C281C6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8417D8C22119E7EE00C281C6 /* Alamofire.framework */; };
+		8488E1E0211B10CE00DE3EF5 /* AllCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E1DF211B10CE00DE3EF5 /* AllCategoriesViewController.swift */; };
+		8488E1E2211B18A400DE3EF5 /* AllCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E1E1211B18A400DE3EF5 /* AllCategoriesCollectionViewCell.swift */; };
+		8488E1E4211B2DEA00DE3EF5 /* Subcategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E1E3211B2DEA00DE3EF5 /* Subcategories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		8417D8BC2119E3F500C281C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8417D8BE2119E57900C281C6 /* AllCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategories.swift; sourceTree = "<group>"; };
 		8417D8C22119E7EE00C281C6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8488E1DF211B10CE00DE3EF5 /* AllCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesViewController.swift; sourceTree = "<group>"; };
+		8488E1E1211B18A400DE3EF5 /* AllCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8488E1E3211B2DEA00DE3EF5 /* Subcategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subcategories.swift; sourceTree = "<group>"; };
 		AE610FD023C0453C500453B1 /* Pods-B-TOP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-TOP.release.xcconfig"; path = "Pods/Target Support Files/Pods-B-TOP/Pods-B-TOP.release.xcconfig"; sourceTree = "<group>"; };
 		CDD262E95E09665C541B4086 /* Pods-B-TOP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-TOP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-B-TOP/Pods-B-TOP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +96,8 @@
 				8417D89D2119DD6000C281C6 /* ViewController.swift */,
 				8417D8AE2119E14B00C281C6 /* Network */,
 				8417D89F2119DD6000C281C6 /* Main.storyboard */,
+				8488E1DF211B10CE00DE3EF5 /* AllCategoriesViewController.swift */,
+				8488E1E1211B18A400DE3EF5 /* AllCategoriesCollectionViewCell.swift */,
 				8417D8A22119DD6100C281C6 /* Assets.xcassets */,
 				8417D8A42119DD6100C281C6 /* LaunchScreen.storyboard */,
 				8417D8A72119DD6100C281C6 /* Info.plist */,
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8417D8BE2119E57900C281C6 /* AllCategories.swift */,
+				8488E1E3211B2DEA00DE3EF5 /* Subcategories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,8 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8488E1E2211B18A400DE3EF5 /* AllCategoriesCollectionViewCell.swift in Sources */,
 				8417D8B82119E23400C281C6 /* HTTPStatusCode.swift in Sources */,
+				8488E1E4211B2DEA00DE3EF5 /* Subcategories.swift in Sources */,
 				8417D89E2119DD6000C281C6 /* ViewController.swift in Sources */,
+				8488E1E0211B10CE00DE3EF5 /* AllCategoriesViewController.swift in Sources */,
 				8417D8B42119E22600C281C6 /* ServerManager.swift in Sources */,
 				8417D89C2119DD6000C281C6 /* AppDelegate.swift in Sources */,
 				8417D8B62119E22E00C281C6 /* HTTPRequestManager.swift in Sources */,
