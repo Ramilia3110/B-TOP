@@ -9,7 +9,9 @@
 import UIKit
 
 class AllCategoriesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
     var allCategories : [Category] = []
+    
     @IBOutlet weak var allCategoriesView: UICollectionView!
     
     override func viewDidLoad() {
@@ -22,7 +24,6 @@ class AllCategoriesViewController: UIViewController, UICollectionViewDelegate, U
     func setCategory (getCategories:[Category]){
         allCategories = getCategories
         self.allCategoriesView.reloadData()
-        
     }
     
     func forError(error: String) {
@@ -37,10 +38,19 @@ class AllCategoriesViewController: UIViewController, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return allCategories.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = allCategoriesView.dequeueReusableCell(withReuseIdentifier: "categories", for: indexPath) as! AllCategoriesCollectionViewCell
-        cell.setData(category: allCategories[indexPath.row])
+        cell.setData(category: allCategories[indexPath.item])
         return cell
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let st = UIStoryboard(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "subcategoriesVC") as! SubcategoriesViewController
+        vc.categoryID = allCategories[indexPath.item].id
+        self.show(vc, sender: self)
         
     }
 }

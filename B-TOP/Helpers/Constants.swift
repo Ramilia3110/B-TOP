@@ -11,7 +11,10 @@ struct Constants {
     struct Network{
         struct EndPoint {
             static let categories = "categories/"
-            static let languages = "categories/2/"
+            static let subcategories = "categories/"
+            static let courses = "/subcategories/"
+            static let courseDetail = "/courses/"
+            static let paginatedCourses = "courses/?page_size=10&page=" 
             
         }
         

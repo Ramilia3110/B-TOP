@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class Language: Decodable {
+
+class Subcategory: Decodable {
     var id: Int = 0
     var title : String = ""
     var parent : Int = 0

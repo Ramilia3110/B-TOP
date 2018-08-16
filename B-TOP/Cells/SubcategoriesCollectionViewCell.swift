@@ -7,9 +7,9 @@
 
 import UIKit
 import  Kingfisher
-class LanguagesCollectionViewCell: UICollectionViewCell {
-    @IBOutlet  weak var imageLanguage: UIImageView!
-    @IBOutlet weak var titleLanguage: UILabel!
+class SubcategoriesCollectionViewCell: UICollectionViewCell {
+    @IBOutlet  weak var imageSubcategory: UIImageView!
+    @IBOutlet weak var titleSubcategory: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,10 +17,10 @@ class LanguagesCollectionViewCell: UICollectionViewCell {
     }
     
     
-    func setData(lang: Language ){
-        titleLanguage.text = lang.title
+    func setData(lang: Subcategory ){
+        titleSubcategory.text = lang.title
         let url = URL(string: lang.subcategory_image_url)
-        imageLanguage.kf.setImage(with: url)
+        imageSubcategory.kf.setImage(with: url)
         
         
         
